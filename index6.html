@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .buy {
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+            font-size: 18px;
+            /* inline-block = inline + block */
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+            /* bo tròn */
+            border-radius: 5px;
+        }
+
+        .demo {
+            background-color: orange;
+            color: white;
+            /* bản chất inline ko thể đặt width và height */
+            width: 100px;
+            height: 30px;
+            /* chỉ có đặt width và height khi display không phải là inline */
+            /* muốn giữa được đặc tính inline nằm trên cùng 1 hàng mà có được đặc tính đặt width và height của block thì dùng display:inline-block */
+            display: inline-block;
+        }
+    </style>
+</head>
+<body style="background-color: antiquewhite;">
+    
+    <a href="#" class="buy">Hãy mua ngay</a>
+
+    <a href="#" class="demo">Demo 1</a>
+    <a href="#" class="demo">Demo 2</a>
+    <a href="#" class="demo">Demo 3</a>
+</body>
+</html>
