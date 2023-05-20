@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 10px;
+    font-family: "Roboto","Arial",sans-serif;
+  }
+  
+  .youtube-nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    margin: 20px 20px 20px 50px;
+  }
+  
+  .youtube-nav ul li {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: gainsboro;
+    margin-right: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .youtube-nav ul li a {
+    font-size: 14px;
+    color: gray;
+    text-decoration: none;
+  }
+  
+  .youtube-nav ul li.nav-all {
+    background-color: #000000;
+  }
+  
+  .youtube-nav ul li.nav-all a {
+    color: white;
+  }
+  
+  .youtube-ads {
+    position: relative;
+    background: #000000;
+    color: white;
+    margin-left: 30px;
+    margin-right: 20px;
+    padding: 20px;
+  }
+  
+  .yads-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .yads-title {
+    font-size: 32px;
+  }
+  
+  .yads-desc {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .youtube-ads .yads-btn {
+    display: inline-block;
+    color: white;
+    padding: 6px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    border:1px solid white;
+    margin-top: 30px;
+  }
+  
+  .youtube-vlist {
+    padding: 20px 40px;
+  }
+  
+  .ylist-content {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2%;
+  }
+  
+  .yvideo-item {
+    flex: 0 1 23%;
+    margin-bottom: 20px;
+  }
+  
+  .yvideo-thumbnail {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .yvideo-thumbnail > * {
+    width: 100%;
+  }
+  
+  .yvideo-info {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .yvideo-avatar {
+    margin-right: 20px;
+  }
+  
+  .yvideo-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+  
+  .yvideo-meta {
+    width: calc(100% - 60px);
+  }
+  
+  .yvideo-title {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .yvideo-author {
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  
+  .yvideo-submeta {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .yvideo-submeta .yvideo-view {
+    margin-right: 20px;
+  }
