@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <h3>Máy tính đơn giản</h3>
+
+        <div>
+            <label for="">Số A</label>
+            <input type="number" value="" name="a" id="a">
+        </div>
+
+        <div>
+            <label for="">Số B</label>
+            <input type="number" value="" name="b" id="b">
+        </div>
+
+        <div>
+            <button onclick="
+                var a = document.getElementById('a').value;
+                var b = document.getElementById('b').value;
+                // lệnh typeof ten_bien; kiểm tra kiểu data của biến đó
+                console.log('a :' + typeof a);
+                console.log('b :' + typeof b);
+                // parseInt() ép kiểu về số nguyên
+                // parseFloat() ép kiểu về số thực
+                a = parseFloat(a);
+                b = parseFloat(b);
+                console.log('a :' + typeof a);
+                console.log('b :' + typeof b);
+                var c = calc(a, b, '+');
+                document.getElementById('result').innerText = 'Kết quả ' + c;
+                ">+</button>
+            <button onclick="
+                var a = document.getElementById('a').value;
+                var b = document.getElementById('b').value;
+                var c = calc(a, b, '-');
+                document.getElementById('result').innerText = 'Kết quả ' + c;
+                ">-</button>
+            <button onclick="
+            var a = document.getElementById('a').value;
+            var b = document.getElementById('b').value;
+            var c = calc(a, b, '*');
+            document.getElementById('result').innerText = 'Kết quả ' + c;">*</button>
+            <button onclick="
+            var a = document.getElementById('a').value;
+            var b = document.getElementById('b').value;
+            var c = calc(a, b, '/');
+            document.getElementById('result').innerText = 'Kết quả ' + c;">/</button>
+        </div>
+
+        <div id="result">
+            Kết quả ?
+        </div>
+    </div>
+
+    <script>
+        function calc(x,y,op){
+            // = phép gán
+            var t = 0;
+            // == phép so sánh
+            if (op == '+') {
+                t = x + y;
+            } else if (op == '-') {
+                t = x - y;
+            } else if (op == '*') {
+                t = x * y;
+            } else if (op == '/') {
+                t = x / y;
+            } else {
+                t = 0;
+            }
+            return t;
+        }
+    </script>
+    
+</body>
+</html>

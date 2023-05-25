@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container > div {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        - sự kiện trong trình duyệt 
+        sự kiện click chuột vào 1 thẻ bất kỳ onclick
+        - học cách lấy giá trị value của 1 ô input 
+        - vận dụng if ... else if ... else tính toán ra BMI
+        - hàm function ( input đầu vào , output là đầu ra) 
+        nồi cơm điện ( input đầu vào : điện, gạo, nước)
+        input chính là các tham số đầu vào 
+        ( output : cơm nóng )
+
+        function noi_com_dien(điện, gạo, nước) {
+            // code thực thi trong hàm 
+            // thân của function 
+            return cơm;
+        }
+    </pre>
+
+    <div class="container">
+        <h3>Ứng dụng BMI</h3>
+
+        <div>
+            <label for="">Nhập chiều cao (mét)</label>
+            <input type="text" name="height" id="height" value="0">
+        </div>
+
+        <div>
+            <label for="">Nhập cân nặng  (kg)</label>
+            <input type="text" name="weight" id="weight" value="0">
+        </div>
+
+        <div>
+            <button id="calc" onclick="
+                var height = document.getElementById('height').value;
+                var weight = document.getElementById('weight').value;
+                // gọi hàm
+                var ot = bmiCalculator(height,weight);
+                alert(ot);">Tính chỉ số BMI</button>
+        </div>
+    </div>
+    
+
+    <script>
+        function bmiCalculator(h,w) {
+            //alert("bmiCalculator");
+            var bmi = w/(h*h);
+            console.log('bmi: ' + bmi);
+            // kết quả phân loại
+            var result = '';
+            if (bmi > 0 && bmi < 18.5) {
+                result = 'Gầy';
+            } else if(bmi >= 18.5 &&  bmi <= 24.9) {
+                result = "Bình thường";
+            } else if(bmi > 24.9 && bmi <= 29.9) {
+                result = "tiền béo phì";
+            } else if(bmi > 29.9 && bmi <= 34.9) {
+                result = "béo phì cấp 1";
+            } else if(bmi > 34.9 && bmi <= 30.9) {
+                result = "béo phì cấp 2";
+            } else {
+                result = "béo phì cấp 3";
+            }
+            console.log('phân loại : ' + result);
+
+            var output = "Kết quả BMI của bạn là " + bmi + ".Phân loại " + result;
+
+            // trả ra kết quả
+            return output;
+        }
+    </script>
+</body>
+</html>

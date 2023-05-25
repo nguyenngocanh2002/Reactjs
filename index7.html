@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            background-color: antiquewhite;
+        }
+        .feature-box1 {
+            flex: 0 1 25%;
+            background-color: green;
+            min-height: 200px;
+        }
+        .feature-box2 {
+            flex: 0 1 25%;
+            background-color: violet;
+            min-height: 200px;
+        }
+        .feature-box3 {
+            flex: 0 1 25%;
+            background-color: olive;
+            min-height: 200px;
+        }
+        .feature-box4 {
+            flex: 0 1 25%;
+            background-color: orange;
+            min-height: 200px;
+        }
+
+        @media screen and (min-width:0px) and (max-width:812px) {
+            /* áp dụng mobile */
+            .feature-box1 {
+                flex: 0 1 100%;
+            }
+            .feature-box2 {
+                flex: 0 1 100%;
+            }
+            .feature-box3 {
+                flex: 0 1 100%;
+            }
+            .feature-box4 {
+                flex: 0 1 100%;
+            }
+        }
+
+        @media screen and (min-width:812px) and (max-width:1000px) {
+            /* áp dụng ipad */
+            .feature-box1 {
+                flex: 0 1 50%;
+            }
+            .feature-box2 {
+                flex: 0 1 50%;
+            }
+            .feature-box3 {
+                flex: 0 1 50%;
+            }
+            .feature-box4 {
+                flex: 0 1 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Feature box</h1>
+
+    <div class="container">
+        <div class="feature-box1">
+            Feature 1
+        </div>
+        <div class="feature-box2">
+            Feature 2
+        </div>
+        <div class="feature-box3">
+            Feature 3
+        </div>
+        <div class="feature-box4">
+            Feature 4
+        </div>
+    </div>
+    
+</body>
+</html>

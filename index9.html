@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        thực hành chuỗi trong js
+    </pre>
+
+    <script>
+        /* tên biến nên dùng tiếng anh
+        không dùng tiếng việt và càng chú ý là không được dùng tiếng việt có dấu */
+
+        /* tên biến đặt ngữ nghĩa */
+        /* tên biến không được chứa dấu cách và ko chưa các ký tự đặc biệt. tên biến có thể chứa số ví dụ city1 nhưng không được bắt đầu bằng một số 1city */
+
+        /* quy tắc đặt tên biến có 2 cách */
+        /* cách 1 : camelCase con lạc đà : productName,productPrice */
+        /* cách 2 : dùng dấu _ phân tách các chữ cái : product_name , product_price */
+
+        /* không đặc tên biến trùng với từ khóa trong js
+        var var;
+        */
+        var city = 'hà nội';
+        var info = 'là \'thủ đô\' của nước việt nam';
+        console.log(city + ' ' + info);
+
+        // in ra : hà nội là 'thủ đô' của việt nam
+
+        // cách 1 : dùng dấu escape \
+        // cách 2 : dùng nháy kép chứa nháy đơn
+        var city1 = 'đà nẵng';
+        var info1 = "là 1 thành phố 'trung ương' của miền trung";
+        console.log(city1 + ' ' + info1);
+
+        var city2 = 'hồ chí minh';
+        // dùng nháy đơn chưa nháy kép
+        var info2 = 'là thành phố có tên cũ là "sài gòn"';
+        var info3 = "là thành phố có tên cũ là \"sài gòn\"";
+        console.log(city2 + ' ' + info2);
+        console.log(city2 + ' ' + info3);
+    
+        
+    </script>
+</body>
+</html>
